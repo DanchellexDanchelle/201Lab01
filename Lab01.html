@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header> The Great TikTok Quizzer</header>
+    <main>
+        <h1> Class 1 Lab</h1>
+        <p style="color: red"> 1. Whats your Tiktok UserName? </p>
+        <input type="text" id="username" username="">
+
+        <p style="color: green">2. Where are you from ?</p>
+        <input type="text" id="place" place="">
+
+
+        <p style="color: orangered">3. What side of tiktok is your page known for?</p>
+        <input type="text" id="blanktok" blanktok="">
+
+        <p style="color: blue">4. What other Tiktoker would you like to collab with ?</p>
+        <input type="text" id="other" other="">
+<button onclick="submit()">submit</button>
+    </main>
+    <footer>
+        <script>
+            function submit() {
+                let username = document.getElementById("username").value
+                let place = document.getElementById("place").value
+                let blanktok = document.getElementById("blanktok").value
+                let other = document.getElementById("other").value
+                console.log("Username", username)
+                console.log("Place", place)
+                console.log("blanktok", blanktok)
+                console.log("other", other)
+
+                //alert using variables
+                alert("Hey " +" "+ username +" "+ "from" +" "+ place +" "+ "I like" +" "+ blanktok +" "+ "too. You should def collab with " +" "+ other)
+
+            }
+
+
+        </script>
+    </footer>
+</body>
+
+</html>
